@@ -1,0 +1,98 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true">
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="7dp"
+        android:src="@drawable/kathok"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/etField"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:gravity="top|left"
+        android:hint="এখানে লিখুন..."
+        android:inputType="textMultiLine"
+        android:lines="8"
+        android:maxLines="10"
+        android:minLines="6"
+        android:padding="6dp"
+        android:textColor="@android:color/white"
+        android:scrollbars="vertical" >
+
+        <requestFocus />
+    </EditText>
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="7dp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/rdMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:textColor="#00CCCF"
+            android:text="পুরুষ" />
+
+        <RadioButton
+            android:id="@+id/rdFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#00CCCF"
+            android:text="মহিলা" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button1"
+        style="@style/btnStyleBlackpearl"
+        android:width="170dp"
+        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="read"
+        android:text="পড়ে শোনাও!" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+       
+        android:layout_height="20dp"
+        android:orientation="vertical" >
+
+     
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnAbout"
+        style="@style/btnStyleBlackpearl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:onClick="about"
+        android:text="About"
+        
+        android:width="170dp" />
+
+</LinearLayout>
+</ScrollView>
